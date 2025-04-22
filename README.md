@@ -1,7 +1,7 @@
 # WP-Theme
 #### Wordpress starter theme with blade templating
 
-### installation 
+### Installation 
 ```bash 
 composer create-project webpup/wp-theme my-theme
 ```
