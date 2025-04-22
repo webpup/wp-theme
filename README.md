@@ -6,3 +6,6 @@
 composer create-project webpup/wp-theme my-theme
 ```
 
+
+## Docs
+[webpup.github.io/wp-theme](https://webpup.github.io/wp-theme)
