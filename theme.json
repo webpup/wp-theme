@@ -1,0 +1,26 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+    "version": 2,
+	"patterns": [
+		"three-columns-of-services",
+		"clients-section"
+	],
+    "settings":{},
+    "styles":{},
+    "templateParts": [
+        {
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+    ]
+
+
+
+
+}

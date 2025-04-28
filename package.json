@@ -1,0 +1,16 @@
+{
+  "name": "wp-theme",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "browser-sync start --proxy 'wp2.test' --files '**/* ' --no-open",
+    "dev": " npm run start & tailwindcss -i style.css -o assets/main.css --watch --minify",
+    "build": "tailwindcss -i style.css -o assets/main.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "browser-sync": "^3.0.4",
+    "tailwindcss": "^4.1.4"
+  }
+}

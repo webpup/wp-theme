@@ -1,0 +1,22 @@
+/*
+Theme Name: WP Theme
+*/
+
+@import "tailwindcss" theme(static);
+/* @import 'tailwindcss' source("../.."); */
+@import './assets/font-faces.css';
+
+@theme {
+--font-roslindale-display-bold: 'Roslindale Display Bold', serif;
+--font-roslindale-display-condensed-bold: 'Roslindale Display Condensed Bold',
+    serif;
+}
+
+h1 {
+    @apply text-6xl font-roslindale-display-condensed-bold leading-none;
+}
+
+h2 {
+    @apply font-bold font-roslindale-display-condensed-bold leading-none;
+}
+
