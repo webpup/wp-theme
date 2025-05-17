@@ -3,13 +3,13 @@
 @source "../..";
 
 @theme {
-  --font-my-base-font: "My Base Font", serif;
+  --font-manrope-regular: "Manrope", serif;
 }
 
 h1 {
-  @apply text-6xl text-green-500 font-my-base-font leading-none;
+  @apply text-6xl text-green-500 font-manrope-regular leading-none;
 }
 
 h2 {
-  @apply font-bold font-my-base-font leading-none;
+  @apply font-bold leading-none;
 }

@@ -2,19 +2,20 @@
 
 function wp_theme_load_scripts()
 {
-    if (defined('WP_ENV') && WP_ENV === 'development1') {
+    // Enqueue style CSS file
+    wp_enqueue_style(
+        'wp_theme-style',
+        get_parent_theme_file_uri('/style.css'),
+        array(),
+        wp_get_theme()->get('Version')
+    );
+
+    if (defined('WP_ENV') && WP_ENV === 'development') {
         $dev_url = get_site_url() . ":5173/js/main.js";
         echo "Development url : $dev_url";
         echo "<script type='module' src='$dev_url'></script>";
 
     } else {
-        // Enqueue style CSS file
-        wp_enqueue_style(
-            'wp_theme-style',
-            get_parent_theme_file_uri('/style.css'),
-            array(),
-            wp_get_theme()->get('Version')
-        );
         // Enqueue tailwind CSS file
         wp_enqueue_style('main-css', get_theme_file_uri('/dist/css/main.css'));
 
