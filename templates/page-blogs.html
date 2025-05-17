@@ -1,0 +1,24 @@
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+    
+    <!-- wp:query {"queryId":1,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post", "categoryName":"blogs","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+    <div class="wp-block-query">
+        
+        <!-- wp:post-template -->
+            <!-- wp:post-title {"level":2,"isLink":true,"fontSize":"large"} /-->
+            <!-- wp:post-excerpt {"moreText":"Continue reading"} /-->
+            <!-- wp:post-date {"format":"F j, Y"} /-->
+        <!-- /wp:post-template -->
+        
+        <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+            <!-- wp:query-pagination-previous /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        
+    </div>
+    <!-- /wp:query -->
+    
+</main>
+<!-- /wp:group -->
+

@@ -1,26 +1,41 @@
 {
-    "$schema": "https://schemas.wp.org/wp/6.5/theme.json",
-    "version": 2,
-	"patterns": [
-		"three-columns-of-services",
-		"clients-section"
-	],
-    "settings":{},
-    "styles":{},
-    "templateParts": [
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "patterns": ["three-columns-of-services", "clients-section"],
+  "settings": {
+    "typography": {
+      "fontFamilies": [
         {
-			"area": "header",
-			"name": "header",
-			"title": "Header"
-		},
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
-		}
-    ]
-
-
-
-
+          "name": "My Base Font",
+          "slug": "my-base-font",
+          "fontFamily": "Arial, sans-serif",
+          "weight": ["300", "400", "700"]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--my-base-font)"
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "page-no-title",
+      "postTypes": ["page"],
+      "title": "Page No Title"
+    }
+  ]
 }

@@ -1,0 +1,15 @@
+/* @import "tailwindcss" theme(static); */
+@import "tailwindcss";
+@source "../..";
+
+@theme {
+  --font-my-base-font: "My Base Font", serif;
+}
+
+h1 {
+  @apply text-6xl text-green-500 font-my-base-font leading-none;
+}
+
+h2 {
+  @apply font-bold font-my-base-font leading-none;
+}

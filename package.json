@@ -4,13 +4,16 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "browser-sync start --proxy 'wp2.test' --files '**/* ' --no-open",
-    "dev": " npm run start & tailwindcss -i style.css -o assets/main.css --watch --minify",
-    "build": "tailwindcss -i style.css -o assets/main.css --minify"
+    "dev": "vite",
+    "build": "vite build",
+    "package": "pup theme wp-theme"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.4",
-    "browser-sync": "^3.0.4",
-    "tailwindcss": "^4.1.4"
+    "@babel/preset-react": "^7.27.1",
+    "@tailwindcss/vite": "^4.1.7",
+    "@wordpress/scripts": "^30.16.0",
+    "tailwindcss": "^4.1.7",
+    "vite": "^6.3.5",
+    "webpup-cli": "^0.0.4"
   }
 }

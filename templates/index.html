@@ -1,13 +1,11 @@
-<!-- wp:template-part {"slug":"header","area":"header","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:pattern {"slug":"wp-theme/hero"} /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top: var(--wp--preset--spacing--60)">
+  <!-- wp:pattern {"slug":"wp_theme/hidden-blog-heading"} /-->
+  <!-- wp:pattern {"slug":"wp_theme/template-query-loop"} /-->
+  <h1>Index Page</h1>
+</main>
+<!-- /wp:group -->
 
-<!-- wp:heading -->
-<h2 class="text-9xl text-green-600">Index page 1234-77</h2>
-<!-- /wp:heading -->
-
- <!-- wp:paragraph --><p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum molestias voluptate placeat, tenetur obcaecati delectus! Ipsum, omnis facilis. Temporibus similique aliquid, quos assumenda quaerat tempore blanditiis natus esse vero.
- </p><!-- /wp:paragraph -->
-
-
+<!-- wp:template-part {"slug":"footer"} /-->

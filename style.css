@@ -1,22 +1,24 @@
 /*
 Theme Name: WP Theme
+Theme URI: https://webpup.github.io/wp-theme
+Author: wp theme team
+Author URI: https://webpup.github.io
+Description: Minimum wordpress block based theme for FSE (full site editing) with integrated TailwindCSS and auto reload. This theme is based on the Twenty Twenty-Five theme, which is a block-based theme designed for WordPress. It is built to be simple, flexible, and adaptable, making it suitable for a wide range of websites. The theme features a clean and modern design, with a focus on readability and usability. It includes various templates and patterns for different page types, allowing users to create personal blogs, professional portfolios, online magazines, or business websites with ease. The theme also supports international typography and offers a variety of color palettes to choose from.
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.2
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-theme
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
-@import "tailwindcss" theme(static);
-/* @import 'tailwindcss' source("../.."); */
-@import './assets/font-faces.css';
-
-@theme {
---font-roslindale-display-bold: 'Roslindale Display Bold', serif;
---font-roslindale-display-condensed-bold: 'Roslindale Display Condensed Bold',
-    serif;
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 0.1em;
 }
-
-h1 {
-    @apply text-6xl font-roslindale-display-condensed-bold leading-none;
-}
-
-h2 {
-    @apply font-bold font-roslindale-display-condensed-bold leading-none;
-}
-
