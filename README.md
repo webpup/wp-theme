@@ -13,7 +13,7 @@ git clone https://github.com/webpup/wp-theme.git
 ### HRM - Livereload setup
 
 ```bash
-# wp-config.php add the following
+# wp-config.php add the following for local development setup only
 
 # /* That's all, stop editing! Happy publishing. */
 define('WP_ENV', 'development');
