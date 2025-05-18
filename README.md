@@ -6,8 +6,8 @@
 
 ```bash
 git clone https://github.com/webpup/wp-theme.git
-# Rename .env.example to .env
-# Do setup .evn according to your environments
+# Rename env.example to .env
+# Do setup .env according to your environments
 ```
 
 ### HRM - Livereload setup
